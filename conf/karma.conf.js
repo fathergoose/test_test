@@ -40,8 +40,10 @@ module.exports = function (config) {
       require('karma-phantomjs-launcher'),
       require('karma-phantomjs-shim'),
       require('karma-ng-html2js-preprocessor'),
-      require('karma-angular-filesort')
-    ]
+      require('karma-angular-filesort'),
+      require('karma-spec-reporter')
+    ],
+    reporters: ['spec']
   };
 
   config.set(configuration);
